@@ -1,0 +1,114 @@
+// Burgmann Colours
+$red: #7e1d18;
+$blue: #38607c;
+$yellow: #d9971a;
+
+$text: #696969;
+$text-bg: #5b5b5b;
+$text-light: #fff;
+
+$darkgrey: #e2e2e2;
+$lightgrey: #f3f3f3;
+$white: #ffffff;
+
+nav#block-superfish-1 {
+  text-align: center;
+}
+
+$menu-margin: 5px;
+$submenu-size: 1.2em;
+$divider: #cfcfcf;
+
+#superfish-1 {
+  a {
+    color: $blue;
+  } 
+
+  a.sf-depth-1 {
+    line-height:2.2em;
+    height: 2em;
+    padding: 0 25px;
+    margin-left: $menu-margin;
+    font-weight: bold;
+    font-size: 1.4em;
+    &:hover {
+      background-color:$darkgrey;
+    }
+    span.sf-sub-indicator {
+      display:none;
+    }
+  }
+
+  a.sf-depth-2 {
+    margin-left: $menu-margin;
+    background-color:$darkgrey;
+    font-size: $submenu-size;
+
+    &:hover {
+      background-color:$lightgrey;
+    }
+  }
+  
+  a.sf-depth-3 {
+    background-color:$lightgrey;
+    font-style: italic;
+    font-size: $submenu-size;
+    &:hover {
+      background-color:$darkgrey;
+    }
+  }
+  
+  li.middle>, li.first> {
+    &a.sf-depth-2, &a.sf-depth-3 {
+      border-bottom: 1px solid $divider;
+    }
+  }
+    
+
+  li.sfHover>a.sf-depth-1 {
+    background-color:$darkgrey;
+  }
+
+  li.sfHover>a.sf-depth-2 {
+    background-color:$lightgrey;
+  }
+
+  display: inline-block;
+}
+
+nav#block-menu-block-1 {
+  h2 {
+    color:$blue;
+    font-weight:bold;
+    height:2em;
+    line-height: 2.2em;
+    padding-left:0.6em;
+    background: $lightgrey;
+  }
+  ul {
+    li  {
+      list-style: none;
+    }
+    a {
+      color:$blue;
+      font-size: 1.4em;
+      height:2em;
+      line-height:2em;
+      background-color: $lightgrey;
+      border-top: 1px solid $darkgrey;
+      display:block;
+      padding: 0 0 0 15px;
+      &:hover, &.active {
+        background-color: $darkgrey;
+        text-decoration:none;
+      }
+    }
+    .menu-depth-3 a {
+      padding: 0 0 0 30px;
+      font-style:italic;
+    }
+
+    padding:0;
+    margin:0;
+  }
+} 
