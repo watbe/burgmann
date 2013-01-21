@@ -80,7 +80,6 @@ nav#block-menu-block-1 {
   h2 {
     color:$blue;
     font-weight:bold;
-    height:2em;
     line-height: 2.2em;
     padding-left:0.6em;
     background: $lightgrey;
@@ -92,7 +91,6 @@ nav#block-menu-block-1 {
     a {
       color:$blue;
       font-size: 1.4em;
-      height:2em;
       line-height:2em;
       background-color: $lightgrey;
       border-top: 1px solid $darkgrey;
@@ -107,8 +105,41 @@ nav#block-menu-block-1 {
       padding: 0 0 0 30px;
       font-style:italic;
     }
+    .menu-depth-4 a {
+      padding: 0 0 0 45px;
+      font-style:normal;
+    }
 
     padding:0;
     margin:0;
   }
 } 
+
+nav#block-menu-block-2 {
+  ul li {
+    list-style:none;
+    a {
+      color: $blue;
+    }
+  } 
+
+  li.menu-depth-1 {
+    &>a {
+      font-weight:bold;    
+    }
+    float:left;
+    margin-right: 15px;
+  }
+  
+//  li.menu-depth-2 {
+//    margin: 0 0 0.5em;
+//    &>ul {
+//      margin:0 0 1em;
+//    }
+//  }
+
+//  .menu-block-wrapper>ul, .menu-block-wrapper>ul>li>ul {
+//    padding: 0;
+//  } 
+
+}
