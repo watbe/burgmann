@@ -84,14 +84,39 @@ footer > .region-footer {
 #block-block-1 {
   float:right;
 }
+
+#breadcrumb {
+  a {
+    color: $text;
+    border-bottom: 1px solid $text;
+    &:hover {
+      text-decoration:none;
+      border-bottom:none;
+    }
+  }
+}
+
+.field-type-text-with-summary .field-item p {
+  font-size: 1.1em;
+  color: $text;
+}
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
+h1,h2,h3,h4,h5,h6 {
+  color: $blue;
+}
 
-h1 {}
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+}
 
-
-h2 {}
+h2 {
+  font-size: 2em;
+  font-weight: 100;
+  font-variant: small-caps;
+}
 
 
 h3 {}
