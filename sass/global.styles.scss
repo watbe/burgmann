@@ -73,6 +73,10 @@ body {
   font-size: 87.5%;
 }
 
+a {
+  color: $blue;
+}
+
 footer {
   background: #f3f3f3;
 }
@@ -82,7 +86,29 @@ footer > .region-footer {
 }
 
 #block-block-1 {
-  float:right;
+  background-image: url("../images/lines.png");
+  float: right;
+  color: $blue;
+  margin-top: -1em;
+  padding: 1em;
+  width: 20%;
+  h2 {
+    margin-bottom: -0.5em;
+  }
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f00;
+}
+
+#block-menu-block-2 {
+  float: left;
+  margin-top: 1em;
+  width: 76%;
 }
 
 #breadcrumb {
@@ -96,9 +122,11 @@ footer > .region-footer {
   }
 }
 
-.field-type-text-with-summary .field-item p {
-  font-size: 1.1em;
-  color: $text;
+.field-type-text-with-summary .field-item {
+  p, ul, ol {
+    font-size: 1.2em;
+    color: $text;
+  }
 }
 /* =============================================================================
  *   HTML Elements
