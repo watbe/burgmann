@@ -31,7 +31,7 @@ $divider: #cfcfcf;
     margin-left: $menu-margin;
     font-weight: bold;
     font-size: 1.4em;
-    &:hover {
+    &:hover, &.active-trail {
       background-color:$darkgrey;
     }
     span.sf-sub-indicator {
@@ -44,7 +44,7 @@ $divider: #cfcfcf;
     background-color:$darkgrey;
     font-size: $submenu-size;
 
-    &:hover {
+    &:hover, &.active-trail {
       background-color:$lightgrey;
     }
   }
@@ -53,7 +53,7 @@ $divider: #cfcfcf;
     background-color:$lightgrey;
     font-style: italic;
     font-size: $submenu-size;
-    &:hover {
+    &:hover, &.active-trail {
       background-color:$darkgrey;
     }
   }
@@ -65,11 +65,13 @@ $divider: #cfcfcf;
   }
     
 
-  li.sfHover>a.sf-depth-1 {
+  li.sfHover>a.sf-depth-1,
+  li.active-trail>a.sf-depth-1 {
     background-color:$darkgrey;
   }
 
-  li.sfHover>a.sf-depth-2 {
+  li.sfHover>a.sf-depth-2, 
+  li.active-trail>a.sf-depth-2 {
     background-color:$lightgrey;
   }
 
@@ -125,6 +127,9 @@ nav#block-menu-block-2 {
       color: $blue;
     }
   } 
+  li > ul {
+    margin-top: 0;
+  }
 
   li.menu-depth-1 {
     &>a {

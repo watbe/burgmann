@@ -59,6 +59,9 @@
 
 ;----------// Scripts
 
+  scripts[] = scripts/jquery.superLabels.min.js
+  scripts[] = scripts/burg.js
+
   ; Internet Explorer Scripts
   ;
   ; AT can load scripts in conditional comments from the info file. If you are

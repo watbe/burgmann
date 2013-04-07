@@ -73,6 +73,10 @@ body {
   font-size: 87.5%;
 }
 
+p {
+  margin: 1.5em 0;
+}
+
 a {
   color: $blue;
 }
@@ -128,6 +132,115 @@ footer > .region-footer {
     color: $text;
   }
 }
+
+#map_canvas {
+  img {
+    max-width: none;
+  }
+  p  {
+    max-width: 300px;
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
+  }
+}
+
+.views-field-field-date-and-time-1 {
+  width: 63px;
+  text-align:center;
+  text-transform:uppercase;
+  font-weight: bold;
+  float:left;
+  margin-right: 1em;
+
+  .event-day {
+    background-color: $yellow;  
+    color:#fff;
+    padding: 0.5em 0 0.3em;
+  }
+
+  .event-month-year {
+    border: 1px solid #d0d0d0;
+    background-color: $lightgrey;
+    padding: 0.5em 0 0.3em;
+    color: $blue;
+  }
+
+}
+
+.view-id-events {
+  .views-field-title {
+    font-weight: bold;
+    font-size:1.2em;
+  }
+  .views-field-field-short-summary {
+    margin-left:4.5em;
+    font-size:1.2em;
+  }
+}
+
+h2.pane-title.block-title {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.views-row {
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 1em;
+  color: $text;
+  padding-bottom: 1em;
+}
+
+.panel-display {
+  color:$text;
+  p {
+    font-size:1.2em;
+  }
+}
+
+.burg-content-image {
+  float:right;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+form {
+  
+  font-size:1.2em;
+  
+  span.form-required {
+    font-weight:normal;
+  }
+
+  input, textarea {
+    background: $lightgrey;
+    padding: 0.5em 0.8em;
+    &:hover, &:active, &:focus {
+      background-color: lighten($blue, 50%);
+    }
+    font-family: "chaparral-pro", $sans-serif-small; // Set from _custom.scss font variables
+  }
+  input[type="text"],
+  input[type="search"],
+  input[type="email"], {
+    border:none;
+    border-bottom: 1px dotted darken($darkgrey, 20%);
+  }
+
+  textarea {
+    border:none;
+  }
+
+  .form-item {
+    position:relative;
+  
+    label {
+      padding: 0.5em 0.8em;
+      font-weight:normal;
+    }
+  }
+}
+
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
