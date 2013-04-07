@@ -133,6 +133,9 @@
   <?php if ($primary_navigation): print $primary_navigation; endif; ?>
   <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
 
+  <!-- region: Leaderboard -->
+  <?php print render($page['page_header']); ?>
+
   <!-- Messages and Help -->
   <?php print $messages; ?>
   <?php print render($page['help']); ?>

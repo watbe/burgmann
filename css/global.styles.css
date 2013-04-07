@@ -234,34 +234,97 @@ form textarea {
 form .form-item {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003237}}
-form .form-item label {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003240}}
+#content form label {
   padding: 0.5em 0.8em;
   font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003246}}
+#block-user-login {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003249}}
+#block-user-login h2 {
+  color: #fff;
+  background-color: #38607c;
+  width: 187px;
+  font-size: 1em;
+  text-transform: none;
+  font-variant: normal;
+  padding: 0.4em 0 0.2em 1em;
+  font-weight: bold;
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003263}}
+#block-user-login .block-content {
+  position: absolute;
+  background-color: #fff;
+  z-index: 1000;
+  width: 172px;
+  height: 0;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003272}}
+#block-user-login h2:hover + div.block-content, #block-user-login .block-content:hover {
+  height: auto;
+  box-shadow: 0 0 10px #999;
+  padding: 0 1em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003281}}
+#block-search-form {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003284}}
+#block-search-form input[type="search"] {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 0.3em 0.2em 0.1em;
+  width: 240px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003291}}
+#block-search-form input[type="submit"] {
+  background: url("../images/search.png") no-repeat scroll 0 0 transparent;
+  border: medium none;
+  position: relative;
+  right: 27px;
+  text-indent: -9999px;
+  top: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003301}}
+.region-leaderboard {
+  height: 15px;
+  padding-top: 1em;
 }
 
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003308}}
 h1, h2, h3, h4, h5, h6 {
   color: #38607c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003312}}
 h1 {
   font-size: 3em;
   font-weight: 100;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003317}}
 h2 {
   font-size: 2em;
   font-weight: 100;
   font-variant: small-caps;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003403}}
 pre,
 code,
 tt,
@@ -315,7 +378,7 @@ var {
 /*
  * Wraps the header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003490}}
 #header-wrapper {
   /* Debug styles, is this working */
   background: rgba(255, 192, 203, 0.5);
@@ -342,7 +405,7 @@ var {
 /*
  * Footer wrapper
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003487}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003548}}
 #footer-wrapper {
   /* Debug styles, is this working? */
   background: rgba(255, 192, 203, 0.5);
@@ -357,11 +420,11 @@ var {
 /*
  * Logo
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003508}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003569}}
 #logo {
   padding: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003511}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003572}}
 #logo img {
   vertical-align: bottom;
 }
@@ -372,15 +435,15 @@ var {
 /*
  * Site name (h1)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003526}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003587}}
 #site-name {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003532}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003593}}
 #site-name a:link, #site-name a:visited {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003537}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003598}}
 #site-name a:hover, #site-name a:focus {
   text-decoration: underline;
 }
@@ -388,7 +451,7 @@ var {
 /*
  * Site slogan (h2)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003547}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003608}}
 #site-slogan {
   margin: 0;
 }
@@ -402,7 +465,7 @@ var {
 /*
  * The main page title (h1)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003565}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003626}}
 #page-title {
   margin: 0;
 }
@@ -416,14 +479,14 @@ var {
 /*
  * Aggregator feed source
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003583}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003644}}
 #aggregator .feed-source .feed-icon {
   display: inline;
   float: none;
   margin-right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003591}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003652}}
 .feed-details dt,
 .feed-details dd {
   display: inline;
@@ -436,16 +499,16 @@ var {
 /*
  * Generic styles for links. See the ul.links declaration in node and comment stylesheets
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003606}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003667}}
 ul.links {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003671}}
 ul.links.inline {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003614}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003675}}
 ul.links li {
   display: inline;
   list-style: none;
@@ -455,7 +518,7 @@ ul.links li {
 /*
  * Search results are an ordered list so reset the margin
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003625}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003686}}
 .search-results {
   margin: 0;
 }
@@ -505,11 +568,11 @@ ul.links li {
 /* =============================================================================
  *   Links
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003716}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003777}}
 a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003726}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003787}}
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -524,18 +587,18 @@ a:hover, a:focus {
  *  - #secondary-menu (secondary/user menu)
  * You can target all of these with .nav or div[id$="menu-bar"]
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003744}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003805}}
 .nav {
   clear: both;
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003749}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003810}}
 .nav ul,
 .nav ul.menu {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003755}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003816}}
 .nav li,
 .nav ul.menu li {
   display: inline;
@@ -544,14 +607,14 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003764}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003825}}
 .nav li a,
 .nav ul.menu li a {
   display: block;
   white-space: nowrap;
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003775}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003836}}
 .nav .block {
   margin-bottom: 0;
 }
@@ -559,11 +622,11 @@ a:hover, a:focus {
 /* =============================================================================
  *   Superfish
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003785}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003846}}
 ul.sf-menu {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003788}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003849}}
 ul.sf-menu a {
   border-left: 0;
   border-top: 0;
@@ -572,11 +635,11 @@ ul.sf-menu a {
   height: 2.5em;
   line-height: 2.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003802}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003863}}
 ul.sf-menu li:hover, ul.sf-menu li.sfHover {
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003810}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003871}}
 ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   outline: 0;
 }
@@ -584,12 +647,12 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Superfish blocks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003885}}
 .block-superfish ul {
   margin: 0 !important;
   padding: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003835}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003896}}
 .block-superfish li {
   margin: 0 !important;
   padding: 0 !important;
@@ -598,22 +661,22 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Vertical style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003845}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003906}}
 .sf-vertical {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003848}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003909}}
 .sf-vertical li {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003854}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003915}}
 .sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
   left: 100%;
   top: 0;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003861}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003922}}
 .sf-vertical li a {
   padding: 0 10px;
 }
@@ -621,7 +684,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Navbar style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003871}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003932}}
 .sf-navbar {
   padding-bottom: 0 !important;
 }
@@ -629,7 +692,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Sensible padding for the default style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003879}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003940}}
 .sf-menu.sf-style-default a {
   padding: 0 10px;
 }
@@ -637,21 +700,21 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003888}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003949}}
 ul.menu {
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003891}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003952}}
 ul.menu ul {
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003899}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003960}}
 ul.menu li {
   margin: 0;
 }
 
 /* If li.content exists it's a problem, so reset the padding */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003989}}
 .block .menu li.content {
   padding: 0;
 }
@@ -659,13 +722,13 @@ ul.menu li {
 /* =============================================================================
  *   Book navigation menu
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003945}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031006}}
 .book-navigation .page-up {
   /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
   min-width: 2em;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003951}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031012}}
 .book-navigation .menu {
   margin-left: 0;
 }
@@ -673,31 +736,32 @@ ul.menu li {
 /* =============================================================================
  *   Breadcrumbs
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003961}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031022}}
 #breadcrumb {
   margin: 10px 0;
+  opacity: 0.8;
   /* If the label is set to show in theme settings the label class is added */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003965}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031027}}
 #breadcrumb .breadcrumb-label {
   font-size: 1em;
   display: inline;
   padding-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003970}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031032}}
 #breadcrumb .breadcrumb-label:after {
   content: ":";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003975}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031037}}
 #breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003980}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031042}}
 #breadcrumb .with-breadcrumb-label ol {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003984}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031046}}
 #breadcrumb li {
   list-style: none;
   display: inline;
@@ -706,31 +770,31 @@ ul.menu li {
 /* =============================================================================
  *   Pagers
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031011}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031073}}
 ul.pager {
   clear: both;
   margin: 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031018}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031080}}
 .item-list ul.pager li {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031023}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031085}}
 ul.pager li {
   background-image: none;
   display: inline;
   list-style-type: none;
   padding: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031029}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031091}}
 ul.pager li.pager-current {
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031097}}
 .block ul.pager li {
   margin: 0;
 }
@@ -741,7 +805,7 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Skip Navigation
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031072}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031134}}
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -751,7 +815,7 @@ ul.pager li.pager-current {
   width: 12em;
   z-index: 50;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031081}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031143}}
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -762,7 +826,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031092}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031154}}
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -773,7 +837,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031166}}
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
@@ -781,24 +845,24 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Tabs (local tasks)
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031177}}
 #tasks {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031182}}
 ul.primary {
   border-bottom-color: #cccccc;
   margin: 20px 0;
   padding: 0 0 0 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031187}}
 ul.primary li {
   display: block;
   float: left;
   margin: 0 1px -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031192}}
 ul.primary li a {
   background-color: #f5f5f5;
   border-color: #cccccc;
@@ -809,12 +873,12 @@ ul.primary li a {
   height: 1.5em;
   line-height: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031203}}
 ul.primary li a:hover, ul.primary li a:focus {
   background-color: #eeeeee;
   border-color: #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031213}}
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
@@ -822,19 +886,19 @@ ul.primary li.active a:focus {
   border-bottom-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031221}}
 ul.secondary {
   border-bottom: 1px solid #cccccc;
   margin: 1em 0 0;
   padding: 0 .3em 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031226}}
 ul.secondary li {
   border-right: 0;
   list-style: none;
   padding: 0 10px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031233}}
 ul.secondary li a:hover, ul.secondary li a.active {
   border-bottom: none;
   text-decoration: underline;
@@ -843,7 +907,7 @@ ul.secondary li a:hover, ul.secondary li a.active {
 /* =============================================================================
  *   Action links
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031246}}
 ul.action-links {
   margin: 20px 0 0;
   list-style: none;
@@ -864,7 +928,7 @@ ul.action-links {
 /*
  * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031279}}
 .field-label {
   font-size: 1em;
   font-weight: 700;
@@ -882,17 +946,17 @@ ul.action-links {
 /*
  * Taxonomy
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031308}}
 .field-type-taxonomy-term-reference {
   /* The same bottom margin as p, blockquote, ul, ol and dl */
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031313}}
 .field-type-taxonomy-term-reference.field-label-inline .field-items {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031318}}
 .field-type-taxonomy-term-reference.field-label-inline .field-item {
   display: inline;
   list-style: none;
@@ -950,7 +1014,7 @@ ul.action-links {
 /*
  * Float left setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031433}}
 .ia-l .field-type-image figure,
 .iat-l .field-type-image figure {
   margin: 5px 20px 15px 0;
@@ -959,7 +1023,7 @@ ul.action-links {
 /*
  * Centered setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031442}}
 .ia-c .field-type-image figure,
 .iat-c .field-type-image figure {
   margin: 5px auto 15px;
@@ -968,7 +1032,7 @@ ul.action-links {
 /*
  * Float right setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031451}}
 .ia-r .field-type-image figure,
 .iat-r .field-type-image figure {
   margin: 5px 0 15px 20px;
@@ -980,7 +1044,7 @@ ul.action-links {
 /*
  * Main wrapper for most blocks, block_system_main does not have it
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031464}}
 .block {
   margin-bottom: 20px;
 }
@@ -1003,7 +1067,7 @@ ul.action-links {
 /*
  * Block title
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031440}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031502}}
 .block-title {
   margin: 0;
 }
@@ -1014,12 +1078,12 @@ ul.action-links {
 /*
  * Match item list and block menu margin and padding
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031519}}
 .block-content ul,
 .block-content ol {
   padding: 0 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031461}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031523}}
 .block-content li {
   margin: 0;
   padding: 0;
@@ -1109,11 +1173,11 @@ ul.action-links {
 /* =============================================================================
  *   Node Styling
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031634}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031696}}
 .node {
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031713}}
 .node .node-title {
   margin: 0;
 }
@@ -1129,15 +1193,15 @@ ul.action-links {
 /*
  * Wrapper for the list of comments and its titles
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031709}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031771}}
 #comments {
   margin: 1.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031713}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031775}}
 #comments h2.comment-title {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031717}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031779}}
 #comments h2.comment-form {
   margin: 0;
 }
@@ -1145,7 +1209,7 @@ ul.action-links {
 /*
  * Wrapper for a single comment
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031727}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031789}}
 .comment {
   margin-bottom: 20px;
 }
@@ -1153,7 +1217,7 @@ ul.action-links {
 /*
  * Comment title
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031758}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031820}}
 .comment-title {
   margin: 0;
 }
@@ -1167,7 +1231,7 @@ ul.action-links {
 /*
  * "New" marker for comments that are new for the current user
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031790}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031852}}
 .new {
   color: #cc0000;
 }
@@ -1175,7 +1239,7 @@ ul.action-links {
 /*
  * Nested comments are indented
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031798}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031860}}
 .indented {
   margin-left: 40px;
 }
@@ -1186,17 +1250,17 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031814}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031876}}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #cc0000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031818}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031880}}
 .form-item label {
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031825}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031887}}
 .form-item .description {
   font-size: 0.85em;
 }
@@ -1204,7 +1268,7 @@ ul.action-links {
 /*
  * Highlight marks and form required mark
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031839}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031901}}
 .marker,
 .form-required {
   color: #cc0000;
@@ -1213,7 +1277,7 @@ ul.action-links {
 /*
  * The submit button
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031853}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031915}}
 .container-inline div,
 .container-inline label {
   display: inline;
@@ -1222,7 +1286,7 @@ ul.action-links {
 /*
  * Define consistent borders
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031861}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031923}}
 fieldset {
   border: 1px solid #cccccc;
 }
@@ -1233,7 +1297,7 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031875}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031937}}
 a.button {
   -moz-appearance: button;
   -webkit-appearance: button;
@@ -1243,7 +1307,7 @@ a.button {
 /*
  * Password confirmation
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031884}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031946}}
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -1252,18 +1316,18 @@ a.button {
 /* =============================================================================
  *   Tables
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031893}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031955}}
 table {
   margin: 10px 0;
   padding: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031898}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031960}}
 table.sticky-header {
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031909}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031971}}
 table,
 thead,
 tbody,
@@ -1273,27 +1337,27 @@ td {
   border-color: #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031916}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031978}}
 table,
 td,
 th {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031923}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031985}}
 caption,
 th,
 td {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031990}}
 thead tr {
   font-weight: 700;
   background-color: #e5e5e5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031935}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031997}}
 td,
 th {
   border-bottom: 0;
@@ -1301,29 +1365,29 @@ th {
   padding: 5px 7px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031945}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032007}}
 tbody tr {
   border-top: 1px solid #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031950}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032012}}
 tr {
   /* Table row striping */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031952}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032014}}
 tr.odd {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031959}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032021}}
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
   background-color: #f5f5f5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031968}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032030}}
 tr.odd td.active {
   background-color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031972}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032034}}
 tr.even td.active {
   background-color: #ebebeb;
 }
@@ -1332,7 +1396,7 @@ tr.even td.active {
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032000}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032062}}
 #forum td .created,
 #forum td .posts,
 #forum td .topics,
@@ -1345,12 +1409,12 @@ tr.even td.active {
 /* =============================================================================
  *   Messages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032011}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032073}}
 div.messages {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032016}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032078}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -1359,7 +1423,7 @@ div.messages ul {
 /*
  * Unpublished nodes
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032057}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032119}}
 .node-unpublished p.unpublished,
 .comment-unpublished p.unpublished {
   color: pink;
@@ -1385,28 +1449,28 @@ div.messages ul {
 /* =============================================================================
  *    Maintenance pages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032068}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032130}}
 .maintenance-page .container {
   padding: 40px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032073}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032135}}
 .maintenance-page #site-name,
 .maintenance-page #page-title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032080}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032142}}
 .db-offline .container {
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
   max-width: 960px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032087}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032149}}
 .db-offline div.messages {
   margin: 20px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032091}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032153}}
 .db-offline #content {
   padding: 20px 0;
 }
@@ -1417,7 +1481,7 @@ div.messages ul {
 /*
  * Admin menu overrides
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032166}}
 #admin-menu {
   margin: 0;
   padding: 0;
@@ -1426,7 +1490,7 @@ div.messages ul {
 /*
  * Devel Module
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032175}}
 .dev-query {
   background: #eeeeee;
   padding: 30px;
@@ -1435,11 +1499,11 @@ div.messages ul {
 /*
  * Styleguide module tweaks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032184}}
 #styleguide-header {
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032187}}
 #styleguide-header .item-list {
   font-family: inherit;
   margin: 0 20px 20px 0;

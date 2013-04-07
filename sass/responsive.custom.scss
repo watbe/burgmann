@@ -53,6 +53,16 @@
 }
 
 
+#page {
+  width: 100%;
+  max-width: 100%;
+  
+  #columns, #header, .region-leaderboard {
+    width: 1280px;
+    margin:0 auto;
+  }
+}
+
 /*
  * Tablet sizes and up
  */

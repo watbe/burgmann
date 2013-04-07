@@ -233,14 +233,75 @@ form {
 
   .form-item {
     position:relative;
-  
+  }
+}
+
+#content form {
     label {
       padding: 0.5em 0.8em;
       font-weight:normal;
     }
-  }
 }
 
+#block-user-login {
+  float:right;
+
+  h2 {
+    color: #fff;
+    background-color: #38607c;
+    width: 187px;
+    font-size: 1em;
+    text-transform: none;
+    font-variant: normal;
+    padding: 0.4em 0 0.2em 1em;
+    font-weight: bold;
+    display: block;
+    border-radius: 4px;
+    cursor:pointer;
+  } 
+
+  .block-content {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000;
+    width: 172px;
+    height:0;
+    overflow:hidden;
+  } 
+
+h2:hover+div.block-content, .block-content:hover {
+  height:auto;
+  box-shadow: 0 0 10px #999;
+  padding: 0 1em 0;
+}
+
+
+}
+
+#block-search-form {
+  float:right;
+
+  input[type="search"] {
+    background-color:transparent;
+    border: 1px solid #dbdbdb;
+    border-radius:4px;  
+    padding: 0.3em 0.2em 0.1em;
+    width: 240px;
+  }
+  input[type="submit"] {
+    background: url("../images/search.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    position: relative;
+    right: 27px;
+    text-indent: -9999px;
+    top: 5px;
+  }  
+}
+
+.region-leaderboard {
+  height:15px;
+  padding-top:1em;
+}
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
@@ -960,6 +1021,7 @@ ul.menu {
 
 #breadcrumb {
   margin: 10px 0;
+  opacity:0.8;
 
   /* If the label is set to show in theme settings the label class is added */
   .breadcrumb-label {
