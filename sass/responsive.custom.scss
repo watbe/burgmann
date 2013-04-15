@@ -57,12 +57,30 @@
   width: 100%;
   max-width: 100%;
   
-  #columns, #header, .region-leaderboard {
-    width: 1280px;
+  #columns, #header, .region-leaderboard, .region-help, #messages {
+    max-width: 1280px;
     margin:0 auto;
   }
 }
 
+@media all and (max-width: 480px) {
+  #block-block-1 {
+    width: 94%;
+  }
+}
+
+.sidebar-first .content-inner {
+  margin-left: 27%;
+  margin-right: 0;
+}
+
+@media all and (max-width: 768px) {
+  .sidebar-first .content-inner {
+    margin-left: 1em;
+    margin-right: 0;
+  }
+
+}
 /*
  * Tablet sizes and up
  */

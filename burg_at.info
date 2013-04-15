@@ -60,6 +60,7 @@
 ;----------// Scripts
 
   scripts[] = scripts/jquery.superLabels.min.js
+  scripts[] = scripts/jquery.cycle.lite.js
   scripts[] = scripts/burg.js
 
   ; Internet Explorer Scripts

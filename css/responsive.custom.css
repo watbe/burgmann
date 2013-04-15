@@ -47,11 +47,30 @@
   max-width: 100%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/responsive\.custom\.scss}line{font-family:\0000360}}
-#page #columns, #page #header, #page .region-leaderboard {
-  width: 1280px;
+#page #columns, #page #header, #page .region-leaderboard, #page .region-help, #page #messages {
+  max-width: 1280px;
   margin: 0 auto;
 }
 
+@media all and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/responsive\.custom\.scss}line{font-family:\0000367}}
+  #block-block-1 {
+    width: 94%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/responsive\.custom\.scss}line{font-family:\0000372}}
+.sidebar-first .content-inner {
+  margin-left: 27%;
+  margin-right: 0;
+}
+
+@media all and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/responsive\.custom\.scss}line{font-family:\0000378}}
+  .sidebar-first .content-inner {
+    margin-left: 1em;
+    margin-right: 0;
+  }
+}
 /*
  * Tablet sizes and up
  */

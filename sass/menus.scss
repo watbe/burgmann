@@ -19,6 +19,10 @@ $menu-margin: 5px;
 $submenu-size: 1.2em;
 $divider: #cfcfcf;
 
+.sf-sub-indicator {
+  background:url("../images/arrows-ffffff.png") no-repeat scroll -10px -100px transparent;
+}
+
 #superfish-1 {
   a {
     color: $blue;
@@ -56,6 +60,18 @@ $divider: #cfcfcf;
     &:hover, &.active-trail {
       background-color:$darkgrey;
     }
+  }
+ 
+  a.sf-depth-4 {
+    background-color:$darkgrey;
+    &:hover, &.active-trail {
+      background-color: $lightgrey;
+    }
+  }
+  
+  .sf-depth-1:hover>ul,
+  .sf-depth-1.sfHover>ul {
+    top:2.8em;
   }
   
   li.middle>, li.first> {
