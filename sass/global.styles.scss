@@ -83,12 +83,16 @@ a {
   color: $blue;
 }
 
-footer {
+#footer {
   background: #f3f3f3;
 }
 
 footer > .region-footer {
   margin: 0 auto;  
+}
+
+.author-datetime {
+  opacity: 0.7;
 }
 
 #block-block-1 {
@@ -626,7 +630,9 @@ var {
 /*
  * Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column
  */
-#main-content {}
+#main-content {
+  padding: 0 1em;
+}
 
 
 /*
