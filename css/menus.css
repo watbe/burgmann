@@ -1,150 +1,33 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000314}}
-nav#block-superfish-1 {
-  text-align: center;
-}
+nav#block-superfish-1 { text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000322}}
-.sf-sub-indicator {
-  background: url("../images/arrows-ffffff.png") no-repeat scroll -10px -100px transparent;
-}
+.sf-sub-indicator { background: url("../images/arrows-ffffff.png") no-repeat scroll -10px -100px transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000326}}
-#superfish-1 {
-  display: inline-block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000327}}
-#superfish-1 a {
-  color: #38607c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000331}}
-#superfish-1 a.sf-depth-1 {
-  line-height: 2.2em;
-  height: 2em;
-  padding: 0 25px;
-  margin-left: 5px;
-  font-weight: bold;
-  font-size: 1.4em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000338}}
-#superfish-1 a.sf-depth-1:hover, #superfish-1 a.sf-depth-1.active-trail {
-  background-color: #e2e2e2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000341}}
-#superfish-1 a.sf-depth-1 span.sf-sub-indicator {
-  display: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000346}}
-#superfish-1 a.sf-depth-2 {
-  margin-left: 5px;
-  background-color: #e2e2e2;
-  font-size: 1.2em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000351}}
-#superfish-1 a.sf-depth-2:hover, #superfish-1 a.sf-depth-2.active-trail {
-  background-color: #f3f3f3;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000356}}
-#superfish-1 a.sf-depth-3 {
-  background-color: #f3f3f3;
-  font-style: italic;
-  font-size: 1.2em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000360}}
-#superfish-1 a.sf-depth-3:hover, #superfish-1 a.sf-depth-3.active-trail {
-  background-color: #e2e2e2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000365}}
-#superfish-1 a.sf-depth-4 {
-  background-color: #e2e2e2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000367}}
-#superfish-1 a.sf-depth-4:hover, #superfish-1 a.sf-depth-4.active-trail {
-  background-color: #f3f3f3;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000373}}
-#superfish-1 .sf-depth-1:hover > ul,
-#superfish-1 .sf-depth-1.sfHover > ul {
-  top: 2.8em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000378}}
-#superfish-1 li.middle > a.sf-depth-2, #superfish-1 li.middle > a.sf-depth-3, #superfish-1 li.first > a.sf-depth-2, #superfish-1 li.first > a.sf-depth-3 {
-  border-bottom: 1px solid #cfcfcf;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000385}}
-#superfish-1 li.sfHover > a.sf-depth-1,
-#superfish-1 li.active-trail > a.sf-depth-1 {
-  background-color: #e2e2e2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000390}}
-#superfish-1 li.sfHover > a.sf-depth-2,
-#superfish-1 li.active-trail > a.sf-depth-2 {
-  background-color: #f3f3f3;
-}
+#superfish-1 { display: inline-block; }
+#superfish-1 a { color: #38607c; }
+#superfish-1 a.sf-depth-1 { line-height: 2.2em; height: 2em; padding: 0 25px; margin-left: 5px; font-weight: bold; font-size: 1.4em; }
+#superfish-1 a.sf-depth-1:hover, #superfish-1 a.sf-depth-1.active-trail { background-color: #e2e2e2; }
+#superfish-1 a.sf-depth-1 span.sf-sub-indicator { display: none; }
+#superfish-1 a.sf-depth-2 { margin-left: 5px; background-color: #e2e2e2; font-size: 1.2em; }
+#superfish-1 a.sf-depth-2:hover, #superfish-1 a.sf-depth-2.active-trail { background-color: #f3f3f3; }
+#superfish-1 a.sf-depth-3 { background-color: #f3f3f3; font-style: italic; font-size: 1.2em; }
+#superfish-1 a.sf-depth-3:hover, #superfish-1 a.sf-depth-3.active-trail { background-color: #e2e2e2; }
+#superfish-1 a.sf-depth-4 { background-color: #e2e2e2; }
+#superfish-1 a.sf-depth-4:hover, #superfish-1 a.sf-depth-4.active-trail { background-color: #f3f3f3; }
+#superfish-1 .sf-depth-1:hover > ul, #superfish-1 .sf-depth-1.sfHover > ul { top: 2.8em; }
+#superfish-1 li.middle > a.sf-depth-2, #superfish-1 li.middle > a.sf-depth-3, #superfish-1 li.first > a.sf-depth-2, #superfish-1 li.first > a.sf-depth-3 { border-bottom: 1px solid #cfcfcf; }
+#superfish-1 li.sfHover > a.sf-depth-1, #superfish-1 li.active-trail > a.sf-depth-1 { background-color: #e2e2e2; }
+#superfish-1 li.sfHover > a.sf-depth-2, #superfish-1 li.active-trail > a.sf-depth-2 { background-color: #f3f3f3; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\0000398}}
-nav#block-menu-block-1 h2 {
-  color: #38607c;
-  font-weight: bold;
-  line-height: 2.2em;
-  padding-left: 0.6em;
-  background: #f3f3f3;
-  font-variant: normal;
-  font-size: 1.5em;
-  padding-bottom: 0.2em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003108}}
-nav#block-menu-block-1 ul {
-  padding: 0;
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003109}}
-nav#block-menu-block-1 ul li {
-  list-style: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003112}}
-nav#block-menu-block-1 ul a {
-  color: #38607c;
-  font-size: 1.4em;
-  line-height: 2em;
-  background-color: #f3f3f3;
-  border-top: 1px solid #e2e2e2;
-  display: block;
-  padding: 0 0 0 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003120}}
-nav#block-menu-block-1 ul a:hover, nav#block-menu-block-1 ul a.active {
-  background-color: #e2e2e2;
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003125}}
-nav#block-menu-block-1 ul .menu-depth-3 a {
-  padding: 0 0 0 30px;
-  font-style: italic;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003129}}
-nav#block-menu-block-1 ul .menu-depth-4 a {
-  padding: 0 0 0 45px;
-  font-style: normal;
-}
+nav#block-menu-block-1 h2 { color: #38607c; font-weight: bold; line-height: 2.2em; padding-left: 0.6em; background: #f3f3f3; font-variant: normal; font-size: 1.5em; padding-bottom: 0.2em; }
+nav#block-menu-block-1 ul { padding: 0; margin: 0; }
+nav#block-menu-block-1 ul li { list-style: none; }
+nav#block-menu-block-1 ul a { color: #38607c; font-size: 1.4em; line-height: 2em; background-color: #f3f3f3; border-top: 1px solid #e2e2e2; display: block; padding: 0 0 0 15px; }
+nav#block-menu-block-1 ul a:hover, nav#block-menu-block-1 ul a.active { background-color: #e2e2e2; text-decoration: none; }
+nav#block-menu-block-1 ul .menu-depth-3 a { padding: 0 0 0 30px; font-style: italic; }
+nav#block-menu-block-1 ul .menu-depth-4 a { padding: 0 0 0 45px; font-style: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003140}}
-nav#block-menu-block-2 ul li {
-  list-style: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003142}}
-nav#block-menu-block-2 ul li a {
-  color: #38607c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003146}}
-nav#block-menu-block-2 li > ul {
-  margin-top: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003150}}
-nav#block-menu-block-2 li.menu-depth-1 {
-  float: left;
-  margin-right: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/drupal-7\.19\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/menus\.scss}line{font-family:\00003151}}
-nav#block-menu-block-2 li.menu-depth-1 > a {
-  font-weight: bold;
-}
+nav#block-menu-block-2 ul li { list-style: none; }
+nav#block-menu-block-2 ul li a { color: #38607c; }
+nav#block-menu-block-2 li > ul { margin-top: 0; }
+nav#block-menu-block-2 li.menu-depth-1 { float: left; margin-right: 15px; }
+nav#block-menu-block-2 li.menu-depth-1 > a { font-weight: bold; }
