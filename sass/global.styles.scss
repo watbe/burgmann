@@ -62,7 +62,7 @@ body {
 }
 
 #page {
-  background: no-repeat url('../images/capture-imagination.png') transparent 100% 2em;
+//  background: no-repeat url('../images/capture-imagination.png') transparent 100% 2em;
 }
 
 
@@ -202,10 +202,48 @@ footer > .region-footer {
     width: 50%;
 }
 
+.burg-cta {
+  display:block;
+  background-color: $darkgrey;
+  font-size: 2em;
+  padding: 0.4em 0.8em 0.5em ;
+  
+  span {
+    display:block;
+    font-size:0.5em;
+  }
+}
+
+.burg-cta {
+  position: relative;
+  background: #e2e2e2;
+  width: 14em;
+}
+
+.burg-cta:after {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.burg-cta:after {
+  border-color: rgba(226, 226, 226, 0);
+  border-left-color: #e2e2e2;
+  top: 50%;
+  border-width: 1.6em;
+  margin-top: -1.6em;
+}
+
+
 .pane-burg-panels-image-link {
   background-color: $lightgrey;
   float:left;
-  margin-left: 1.6em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
 
   .panels-image-link-title a {
     font-size:1.5em;
@@ -356,10 +394,13 @@ form {
     font-size: 1em;
     text-transform: none;
     font-variant: normal;
-    padding: 0.4em 0 0.2em 1em;
+    padding: 0.4em 0 0.2em;
     font-weight: bold;
+    text-align: center;
     display: block;
     border-radius: 4px;
+    height: 1.7em;
+    margin-top: 0.1em;
     cursor:pointer;
   } 
 
@@ -489,10 +530,80 @@ h2:hover+div.block-content, .block-content:hover {
     width: 640px;
   }
 }
+
 #block-menu-block-1 .block-inner {
   margin:0 ;
 }
 
+.field-type-text-with-summary {
+  table {
+    font-size: 1.2em;
+    color:$text;
+
+    td, th {
+      padding: 9px 14px;
+      border: 1px solid #ddd;
+    }
+
+  }
+  table img {
+
+    float:none;
+    margin:0;
+    padding:0;
+  }
+}
+th {
+  font-variant: small-caps;
+  color: $blue;
+  font-weight: normal;
+}
+
+#phone-list tbody tr:hover {
+  background-color: $blue;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+
+//logout
+#block-block-8 {
+  float:right;
+}
+
+//Social Media
+#block-block-9 {
+  height: 28px;
+  float:right;
+}
+a.social-media {
+  text-indent: -9999px;
+  background-position: 0 0;
+  height: 28px;
+  width: 28px;
+  display:block;
+  float:left;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  &:hover, &:focus, &:active {
+   background-position: 0 100%
+  }
+  &.youtube {
+    background-image: url("../images/youtube.png");
+  }
+  &.facebook {
+    background-image: url("../images/facebook.png");
+  }
+  &.twitter {
+    background-image: url("../images/twitter.png");
+  }
+  &.linkedin {
+    background-image: url("../images/linkedin.png");
+  }
+}
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
@@ -631,7 +742,6 @@ var {
  * Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column
  */
 #main-content {
-  padding: 0 1em;
 }
 
 
@@ -1369,7 +1479,7 @@ ul.pager li {
  * ========================================================================== */
 
 #tasks {
-  margin-bottom: 15px;
+  margin-bottom: -15px;
 }
 
 

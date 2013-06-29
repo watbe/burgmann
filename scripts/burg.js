@@ -40,5 +40,7 @@ jQuery(window).ready(function() {
       delay: 1000
     }
   });*/
-jQuery('#carousel').cycle();
+  jQuery('#carousel').cycle({
+    timeout:7000
+  });
 });
