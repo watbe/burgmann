@@ -1,496 +1,1837 @@
-/* @file global.styles  Styles you add here will load for all device sizes, they are "global", as opposed to "responsive" styles, which only load for a given breakpoint (media query) that you set in theme settings. See the README for more details.   How to use this file: --------------------  There are many empty selectors and some basic styles to act as a guide. Nothing is set in stone and you can change anything - even delete all of it and start with your own clean slate.  To FORCE PRINT all selectors you can search and replace a single { (opening curly brace) and insert an empty comment. This is very useful in conjuction with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/  See global.base also which includes normalize.css and some additional helper classes and base styles. */
-/* ============================================================================= Base ========================================================================== */
-/*  To preserve theme settings never apply font properties to the HTML element. This is critically important if you are using the Responsive JavaScript feature as this relies on being able to set a pseudo font family on the HTML element. If you need to set default font properties of any kind use the BODY element as these can be overridden using font theme settings. */
-/* Body */
-body { margin: 0; background-color: #fff; padding: 0; }
-
-html { background: white; }
-
-body { font-family: "chaparral-pro", "georgia", "lucidia", serif; font-size: 87.5%; }
-
-p { margin: 1.5em 0; }
-
-a { color: #38607c; }
-
-#footer { background: #f3f3f3; }
-
-footer > .region-footer { margin: 0 auto; }
-
-.author-datetime { opacity: 0.7; }
-
-#block-block-1 { background-image: url("../images/lines.png"); float: right; color: #38607c; margin-top: -1em; padding: 1em; width: 22%; }
-#block-block-1 h2 { margin-bottom: -0.5em; }
-
-.arrow-down { width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #f00; }
-
-#block-menu-block-2 { float: left; margin-top: 1em; width: 70%; }
-
-#breadcrumb a { color: #696969; border-bottom: 1px dotted #aaa; }
-#breadcrumb a:hover { text-decoration: none; border-bottom: none; }
-
-.page-future-residents h1#page-title, .page-alumni h1#page-title, .page-support-burgmann h1#page-title, .page-about h1#page-title, .page-functions h1#page-title { display: none; }
-
-.field-type-text-with-summary .field-item p, .field-type-text-with-summary .field-item ul, .field-type-text-with-summary .field-item ol { font-size: 1.2em; color: #696969; }
-
-#map_canvas img { max-width: none; }
-#map_canvas p { max-width: 300px; margin: 0; }
-#map_canvas h2 { margin: 0; }
-
-.views-field-field-date-and-time-1 { width: 63px; text-align: center; text-transform: uppercase; font-weight: bold; float: left; margin-right: 1em; }
-.views-field-field-date-and-time-1 .event-day { background-color: #d9971a; color: #fff; padding: 0.5em 0 0.3em; }
-.views-field-field-date-and-time-1 .event-month-year { border: 1px solid #d0d0d0; background-color: #f3f3f3; padding: 0.5em 0 0.3em; color: #38607c; }
-
-.panels-flexible-region-landing-links { float: left; width: 100%; }
-
-.panels-flexible-column-landing-3 { float: left; width: 50%; }
-
-.panels-flexible-column-landing-3 { float: left; width: 50%; }
-
-.burg-cta { display: block; background-color: #e2e2e2; font-size: 2em; padding: 0.4em 0.8em 0.5em; }
-.burg-cta span { display: block; font-size: 0.5em; }
-
-.burg-cta { position: relative; background: #e2e2e2; width: 14em; }
-
-.burg-cta:after { left: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
-
-.burg-cta:after { border-color: rgba(226, 226, 226, 0); border-left-color: #e2e2e2; top: 50%; border-width: 1.6em; margin-top: -1.6em; }
-
-.pane-burg-panels-image-link { background-color: #f3f3f3; float: left; margin-left: 0.8em; margin-right: 0.8em; width: 292px; }
-.pane-burg-panels-image-link .panels-image-link-title a { font-size: 1.5em; font-weight: bold; padding: 0.3em 0.6em 0.2em; display: block; }
-.pane-burg-panels-image-link .panels-image-link-title a:hover { text-decoration: none; }
-.pane-burg-panels-image-link .block-inner { margin: 0; }
-.pane-burg-panels-image-link .panels-image-link-caption a { padding: 0.3em 0.6em 0.4em; font-size: 1.2em; color: #696969; display: block; }
-.pane-burg-panels-image-link .panels-image-link-caption a:hover { text-decoration: none; }
-.pane-burg-panels-image-link:hover { background-color: #38607c; }
-.pane-burg-panels-image-link:hover a, .pane-burg-panels-image-link:hover .panels-image-link-caption { color: #fff; }
-
-.view-id-events .views-field-title { font-weight: bold; font-size: 1.2em; }
-.view-id-events .views-field-field-short-summary { margin-left: 4.5em; font-size: 1.2em; }
-
-.view-id-news .views-field-title { font-size: 1.3em; }
-.view-id-news .views-field-title a { color: #696969; }
-
-h2.pane-title.block-title { border-bottom: 1px solid #e5e5e5; }
-
-.views-row { border-bottom: 1px solid #e5e5e5; margin-top: 1em; color: #696969; padding-bottom: 1em; }
-
-.panel-display, .panel-flexible { color: #696969; }
-.panel-display p, .panel-flexible p { font-size: 1.2em; margin-top: 0; }
-
-section#main-content { margin: 0; }
-
-.burg-content-image { float: right; padding-bottom: 1em; padding-left: 1em; }
-
-form { font-size: 1.2em; }
-form span.form-required { font-weight: normal; }
-form input, form textarea { background: #f3f3f3; padding: 0.5em 0.8em; font-family: "chaparral-pro", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; }
-form input:hover, form input:active, form input:focus, form textarea:hover, form textarea:active, form textarea:focus { background-color: #cbdce8; }
-form input[type="text"], form input[type="search"], form input[type="email"], form input[type="password"] { border: none; border-bottom: 1px dotted #afafaf; }
-form textarea { border: none; }
-form .form-item { position: relative; }
-form button, form input[type="button"], form input[type="reset"], form input[type="submit"] { border: medium none; border-radius: 3px 3px 3px 3px; cursor: pointer; background-color: #38607c; color: #fff; margin-right: 1em; }
-form button:hover, form button:active, form button:focus, form input[type="button"]:hover, form input[type="button"]:active, form input[type="button"]:focus, form input[type="reset"]:hover, form input[type="reset"]:active, form input[type="reset"]:focus, form input[type="submit"]:hover, form input[type="submit"]:active, form input[type="submit"]:focus { background-color: #e2e2e2; color: #333; }
-
-#content form label { padding: 0.5em  0 0; font-weight: normal; }
-
-.breadcrumb-wrapper { margin-left: 0; }
-
-#block-user-login { float: right; }
-#block-user-login h2 { color: #fff; background-color: #38607c; width: 187px; font-size: 1em; text-transform: none; font-variant: normal; padding: 0.4em 0 0.2em; font-weight: bold; text-align: center; display: block; border-radius: 4px; height: 1.7em; margin-top: 0.1em; cursor: pointer; }
-#block-user-login .block-content { position: absolute; background-color: #fff; z-index: 1000; width: 172px; height: 0; overflow: hidden; }
-#block-user-login h2:hover + div.block-content, #block-user-login .block-content:hover { height: auto; box-shadow: 0 0 10px #999; padding: 0 1em 0; }
-
-#block-search-form { float: right; }
-#block-search-form input[type="search"] { background-color: transparent; border: 1px solid #dbdbdb; border-radius: 4px; padding: 0.3em 0.2em 0.1em; width: 240px; }
-#block-search-form input[type="submit"] { background: url("../images/search.png") no-repeat scroll 0 0 transparent; border: medium none; position: relative; right: 27px; text-indent: -9999px; top: 5px; }
-
-.region-leaderboard { height: 15px; padding-top: 1em; }
-
-.front .region-page-header { margin-bottom: 3em; }
-
-.front h1 { margin-top: 0; color: #696969; font-style: italic; font-size: 2.2em; }
-
-.region-page-header { position: relative; overflow: hidden; height: 320px; background: url("../images/stripes.png") repeat transparent; margin-bottom: 3em; }
-.region-page-header .left { position: absolute; left: 50%; margin-left: -640px; }
-.region-page-header .right { position: absolute; left: 50%; }
-.region-page-header .splash-left { background: url("../images/stripes.png") repeat transparent; height: 320px; left: 50%; margin-left: -640px; position: absolute; width: 75px; z-index: 100; }
-.region-page-header div, .region-page-header img, .region-page-header p, .region-page-header span { margin: 0; padding: 0; }
-.region-page-header .burg-splash { background-color: #7e1d18; color: #fff; font-size: 3.5em; font-style: italic; height: 320px; left: 50%; line-height: 1em; margin-left: -294px; opacity: 0.85; padding: 98px 36px 36px; position: absolute; width: 222px; z-index: 100; }
-.region-page-header .burg-head { font-style: italic; background-color: #d9971a; color: #FFFFFF; font-size: 3.5em; font-weight: 900; left: 50%; line-height: 1em; margin-left: -640px; opacity: 0.85; padding: 1em 0 0.7em 135px; position: absolute; width: 505px; z-index: 100; }
-
-#carousel { height: 320px; }
-#carousel .c-item { height: 320px; left: 50%; margin-left: -320px; width: 640px; }
-
-#block-menu-block-1 .block-inner { margin: 0; }
-
-.field-type-text-with-summary table { font-size: 1.2em; color: #696969; }
-.field-type-text-with-summary table td, .field-type-text-with-summary table th { padding: 9px 14px; border: 1px solid #ddd; }
-.field-type-text-with-summary table img { float: none; margin: 0; padding: 0; }
-
-th { font-variant: small-caps; color: #38607c; font-weight: normal; }
-
-#phone-list tbody tr:hover { background-color: #38607c; color: #fff; }
-#phone-list tbody tr:hover a { color: #fff; }
-
-#block-block-8 { float: right; }
-
-#block-block-9 { height: 28px; float: right; }
-
-a.social-media { text-indent: -9999px; background-position: 0 0; height: 28px; width: 28px; display: block; float: left; margin-left: 2px; margin-right: 2px; }
-a.social-media:hover, a.social-media:focus, a.social-media:active { background-position: 0 100%; }
-a.social-media.youtube { background-image: url("../images/youtube.png"); }
-a.social-media.facebook { background-image: url("../images/facebook.png"); }
-a.social-media.twitter { background-image: url("../images/twitter.png"); }
-a.social-media.linkedin { background-image: url("../images/linkedin.png"); }
-
-/* ============================================================================= HTML Elements ========================================================================== */
-h1, h2, h3, h4, h5, h6 { color: #38607c; }
-
-h1 { font-size: 3em; font-weight: 100; }
-
-h2 { font-size: 2em; font-weight: 100; font-variant: small-caps; }
-
-pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Courier, monospace, sans-serif; }
-
-/* ============================================================================= Wrappers ========================================================================== */
-/* Page wrapper, includes the .container class which sets the overall page or section width Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it! */
-/* Wraps all header elements - branding and .region-header */
-/* Wraps the sidebars the content column */
-/* Main content column wrapper */
-/* Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column */
-/* Wraps the content region, avoid applying styles to this wrapper, its used mainly for position and invisible gutters and can be problematic to style */
-/* Footer wrapper */
-/* Panels may need additional margin wrangling when in the $content region */
-/* Full Width Wrappers These are used in the optional page--full-width-wrappers.tpl.php template. All have internal .container classes. In the full width wrapper template the .container classes set the width or max-width of the contained element - you can style this but never add any width/margin/padding/borders etc to .container */
-/* Wraps #page */
-/* Wraps the leaderboard */
-/* Wraps the header */
-#header-wrapper { /* Debug styles, is this working */ background: rgba(255, 192, 203, 0.5); }
-
-/* Wraps the nav elements */
-/* Wraps breadcrumb */
-/* Wraps messages and help */
-/* Wraps the secondary content/preface region */
-/* Wraps the main content column */
-/* Wraps the tertiary content/postfix region */
-/* Footer wrapper */
-#footer-wrapper { /* Debug styles, is this working? */ background: rgba(255, 192, 203, 0.5); }
-
-/* ============================================================================= Branding ========================================================================== */
-/* Wraps all the branding elements, logo, name and slogan */
-/* Logo */
-#logo { padding: 10px 0; background: url("../images/capture.png") no-repeat scroll 100% center transparent; }
-#logo img { vertical-align: bottom; }
-
-/* Wrapper for the site name and slogan (hgroup) */
-/* Site name (h1) */
-#site-name { margin: 0; }
-#site-name a:link, #site-name a:visited { text-decoration: none; }
-#site-name a:hover, #site-name a:focus { text-decoration: underline; }
-
-/* Site slogan (h2) */
-#site-slogan { margin: 0; }
-
-/* ============================================================================= Page content header ========================================================================== */
-/* Main content header wraps the page title, tabs and actions links */
-/* The main page title (h1) */
-#page-title { margin: 0; }
-
-/* ============================================================================= Misc Global Styles ========================================================================== */
-/* Feed icons */
-/* Aggregator feed source */
-#aggregator .feed-source .feed-icon { display: inline; float: none; margin-right: 10px; }
-
-.feed-details dt, .feed-details dd { display: inline; margin: 0; }
-
-/* Generic styles for the more link */
-/* Generic styles for links. See the ul.links declaration in node and comment stylesheets */
-ul.links { margin: 0; padding: 0; }
-ul.links.inline { display: block; }
-ul.links li { display: inline; list-style: none; padding: 0 10px 0 0; }
-
-/* Search results are an ordered list so reset the margin */
-.search-results { margin: 0; }
-
-/* ============================================================================= Regions ========================================================================== */
-/* Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc */
-/* Regions have an inner div - perfect for adding margin, padding or borders */
-/* Regions can be nested, such as when using Panels */
-/* Header region, embedded in the #header */
-/* Generally used to output Drupals help block, if the help module is enabled */
-/* Secondary content */
-/* Sits above the main content header, like a content-top region */
-/* Sits below the main content, like a content-bottom region */
-/* Sidebars - targets both */
-/* First sidebar */
-/* Second sidebar */
-/* Tertiary content */
-/* Footer region */
-/* ============================================================================= Links ========================================================================== */
-a { text-decoration: none; }
-a:hover, a:focus { text-decoration: underline; }
-
-/* ============================================================================= Primary, Secondary and Menu Bar region menus ========================================================================== */
-/* Use one of the following id's for granular control: - #menu-bar (menu bar region) - #primary-menu (main menu) - #secondary-menu (secondary/user menu) You can target all of these with .nav or div[id$="menu-bar"] */
-.nav { clear: both; margin: 10px 0; }
-.nav ul, .nav ul.menu { margin: 0; padding: 0; }
-.nav li, .nav ul.menu li { display: inline; float: left; list-style: none; margin: 0; padding: 0; }
-.nav li a, .nav ul.menu li a { display: block; white-space: nowrap; padding: 0 10px; }
-.nav .block { margin-bottom: 0; }
-
-/* ============================================================================= Superfish ========================================================================== */
-ul.sf-menu { margin-bottom: 0; }
-ul.sf-menu a { border-left: 0; border-top: 0; padding: 0 10px; text-decoration: none; height: 2.5em; line-height: 2.5em; }
-ul.sf-menu li:hover, ul.sf-menu li.sfHover { outline: 0; }
-ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active { outline: 0; }
-
-/* Superfish blocks */
-.block-superfish ul { margin: 0 !important; padding: 0 !important; }
-.block-superfish li { margin: 0 !important; padding: 0 !important; }
-
-/* Vertical style */
-.sf-vertical { width: 100%; }
-.sf-vertical li { width: 100%; }
-.sf-vertical li:hover ul, .sf-vertical li.sfHover ul { left: 100%; top: 0; margin: 0; padding: 0; }
-.sf-vertical li a { padding: 0 10px; }
-
-/* Navbar style */
-.sf-navbar { padding-bottom: 0 !important; }
-
-/* Sensible padding for the default style */
-.sf-menu.sf-style-default a { padding: 0 10px; }
-
-/* ============================================================================= Menus, usually blocks ========================================================================== */
-ul.menu { padding-left: 15px; }
-ul.menu ul { padding-left: 15px; }
-ul.menu li { margin: 0; }
+/*
+ * @file
+ * global.styles
+ *
+ * Styles you add here will load for all device sizes, they are "global", as
+ * opposed to "responsive" styles, which only load for a given breakpoint (media
+ * query) that you set in theme settings. See the README for more details.
+ *
+ *
+ * How to use this file:
+ * --------------------
+ *
+ * There are many empty selectors and some basic styles to act as a guide.
+ * Nothing is set in stone and you can change anything - even delete all of it
+ * and start with your own clean slate.
+ *
+ * To FORCE PRINT all selectors you can search and replace a single { (opening
+ * curly brace) and insert an empty comment. This is very useful in conjuction
+ * with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+ *
+ * See global.base also which includes normalize.css and some additional
+ * helper classes and base styles.
+ */
+/* =============================================================================
+ *   Base
+ * ========================================================================== */
+/* 
+ * To preserve theme settings never apply font properties to the HTML element.
+ * This is critically important if you are using the Responsive JavaScript
+ * feature as this relies on being able to set a pseudo font family on the HTML
+ * element. If you need to set default font properties of any kind use the BODY
+ * element as these can be overridden using font theme settings.
+ */
+/*
+ * Body
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000358}}
+body {
+  margin: 0;
+  background-color: #fff;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000369}}
+html {
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000373}}
+body {
+  font-family: "chaparral-pro", "georgia", "lucidia", serif;
+  font-size: 87.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000378}}
+p {
+  margin: 1.5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000382}}
+a {
+  color: #38607c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000386}}
+#footer {
+  background: #f3f3f3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000390}}
+footer > .region-footer {
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000394}}
+.author-datetime {
+  opacity: 0.7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\0000398}}
+#block-block-1 {
+  background-image: url("../images/lines.png");
+  float: right;
+  color: #38607c;
+  margin-top: -1em;
+  padding: 1em;
+  width: 22%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003105}}
+#block-block-1 h2 {
+  margin-bottom: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003112}}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003120}}
+#block-menu-block-2 {
+  float: left;
+  margin-top: 1em;
+  width: 70%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003127}}
+#breadcrumb a {
+  color: #696969;
+  border-bottom: 1px dotted #aaa;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003130}}
+#breadcrumb a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003142}}
+.page-future-residents h1#page-title,
+.page-alumni h1#page-title,
+.page-support-burgmann h1#page-title,
+.page-about h1#page-title,
+.page-functions h1#page-title {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003148}}
+.field-type-text-with-summary .field-item p, .field-type-text-with-summary .field-item ul, .field-type-text-with-summary .field-item ol {
+  font-size: 1.2em;
+  color: #696969;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003155}}
+#map_canvas img {
+  max-width: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003158}}
+#map_canvas p {
+  max-width: 300px;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003162}}
+#map_canvas h2 {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003167}}
+.views-field-field-date-and-time-1 {
+  width: 63px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+  margin-right: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003175}}
+.views-field-field-date-and-time-1 .event-day {
+  background-color: #d9971a;
+  color: #fff;
+  padding: 0.5em 0 0.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003181}}
+.views-field-field-date-and-time-1 .event-month-year {
+  border: 1px solid #d0d0d0;
+  background-color: #f3f3f3;
+  padding: 0.5em 0 0.3em;
+  color: #38607c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003190}}
+.panels-flexible-region-landing-links {
+  float: left;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003195}}
+.panels-flexible-column-landing-3 {
+  float: left;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003200}}
+.panels-flexible-column-landing-3 {
+  float: left;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003205}}
+.burg-cta {
+  display: block;
+  background-color: #e2e2e2;
+  font-size: 2em;
+  padding: 0.4em 0.8em 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003211}}
+.burg-cta span {
+  display: block;
+  font-size: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003217}}
+.burg-cta {
+  position: relative;
+  background: #e2e2e2;
+  width: 14em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003223}}
+.burg-cta:after {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003233}}
+.burg-cta:after {
+  border-color: rgba(226, 226, 226, 0);
+  border-left-color: #e2e2e2;
+  top: 50%;
+  border-width: 1.6em;
+  margin-top: -1.6em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003242}}
+.pane-burg-panels-image-link {
+  background-color: #f3f3f3;
+  float: left;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  width: 292px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003248}}
+.pane-burg-panels-image-link .panels-image-link-title a {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.3em 0.6em 0.2em;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003253}}
+.pane-burg-panels-image-link .panels-image-link-title a:hover {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003257}}
+.pane-burg-panels-image-link .block-inner {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003261}}
+.pane-burg-panels-image-link .panels-image-link-caption a {
+  padding: 0.3em 0.6em 0.4em;
+  font-size: 1.2em;
+  color: #696969;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003266}}
+.pane-burg-panels-image-link .panels-image-link-caption a:hover {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003270}}
+.pane-burg-panels-image-link:hover {
+  background-color: #38607c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003272}}
+.pane-burg-panels-image-link:hover a, .pane-burg-panels-image-link:hover .panels-image-link-caption {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003279}}
+.view-id-events .views-field-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003283}}
+.view-id-events .views-field-field-short-summary {
+  margin-left: 4.5em;
+  font-size: 1.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003290}}
+.view-id-news .views-field-title {
+  font-size: 1.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003292}}
+.view-id-news .views-field-title a {
+  color: #696969;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003298}}
+h2.pane-title.block-title {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003302}}
+.views-row {
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 1em;
+  color: #696969;
+  padding-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003309}}
+.panel-display, .panel-flexible {
+  color: #696969;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003311}}
+.panel-display p, .panel-flexible p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003318}}
+section#main-content {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003324}}
+.burg-content-image,
+.image-burgmann_style,
+.view-alumni-newsletter .image-style-thumbnail {
+  float: right;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003330}}
+form {
+  font-size: 1.2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003334}}
+form span.form-required {
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003338}}
+form input, form textarea {
+  background: #f3f3f3;
+  padding: 0.5em 0.8em;
+  font-family: "chaparral-pro", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003341}}
+form input:hover, form input:active, form input:focus, form textarea:hover, form textarea:active, form textarea:focus {
+  background-color: #cbdce8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003349}}
+form input[type="text"],
+form input[type="search"],
+form input[type="email"],
+form input[type="password"] {
+  border: none;
+  border-bottom: 1px dotted #afafaf;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003354}}
+form textarea {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003358}}
+form .form-item {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003362}}
+form button, form input[type="button"], form input[type="reset"], form input[type="submit"] {
+  border: medium none;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  background-color: #38607c;
+  color: #fff;
+  margin-right: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003370}}
+form button:hover, form button:active, form button:focus, form input[type="button"]:hover, form input[type="button"]:active, form input[type="button"]:focus, form input[type="reset"]:hover, form input[type="reset"]:active, form input[type="reset"]:focus, form input[type="submit"]:hover, form input[type="submit"]:active, form input[type="submit"]:focus {
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003379}}
+#content form label {
+  padding: 0.5em  0 0;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003385}}
+.breadcrumb-wrapper {
+  margin-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003389}}
+#block-user-login {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003392}}
+#block-user-login h2 {
+  color: #fff;
+  background-color: #38607c;
+  width: 187px;
+  font-size: 1em;
+  text-transform: none;
+  font-variant: normal;
+  padding: 0.4em 0 0.2em;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  border-radius: 4px;
+  height: 1.7em;
+  margin-top: 0.1em;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003409}}
+#block-user-login .block-content {
+  position: absolute;
+  background-color: #fff;
+  z-index: 1000;
+  width: 172px;
+  height: 0;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003418}}
+#block-user-login h2:hover + div.block-content, #block-user-login .block-content:hover {
+  height: auto;
+  box-shadow: 0 0 10px #999;
+  padding: 0 1em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003427}}
+#block-search-form {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003430}}
+#block-search-form input[type="search"] {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 0.3em 0.2em 0.1em;
+  width: 240px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003437}}
+#block-search-form input[type="submit"] {
+  background: url("../images/search.png") no-repeat scroll 0 0 transparent;
+  border: medium none;
+  position: relative;
+  right: 27px;
+  text-indent: -9999px;
+  top: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003447}}
+.region-leaderboard {
+  height: 15px;
+  padding-top: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003452}}
+.front .region-page-header {
+  margin-bottom: 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003456}}
+.front h1 {
+  margin-top: 0;
+  color: #696969;
+  font-style: italic;
+  font-size: 2.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003462}}
+.region-page-header {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+  background: url("../images/stripes.png") repeat transparent;
+  margin-bottom: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003469}}
+.region-page-header .left {
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003474}}
+.region-page-header .right {
+  position: absolute;
+  left: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003479}}
+.region-page-header .splash-left {
+  background: url("../images/stripes.png") repeat transparent;
+  height: 320px;
+  left: 50%;
+  margin-left: -640px;
+  position: absolute;
+  width: 75px;
+  z-index: 100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003488}}
+.region-page-header div, .region-page-header img, .region-page-header p, .region-page-header span {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003493}}
+.region-page-header .burg-splash {
+  background-color: #7e1d18;
+  color: #fff;
+  font-size: 3.5em;
+  font-style: italic;
+  height: 320px;
+  left: 50%;
+  line-height: 1em;
+  margin-left: -294px;
+  opacity: 0.85;
+  padding: 98px 36px 36px;
+  position: absolute;
+  width: 222px;
+  z-index: 100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003509}}
+.region-page-header .burg-head {
+  font-style: italic;
+  background-color: #d9971a;
+  color: #FFFFFF;
+  font-size: 3.5em;
+  font-weight: 900;
+  left: 50%;
+  line-height: 1em;
+  margin-left: -640px;
+  opacity: 0.85;
+  padding: 1em 0 0.7em 135px;
+  position: absolute;
+  width: 505px;
+  z-index: 100;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003526}}
+#carousel {
+  height: 320px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003528}}
+#carousel .c-item {
+  height: 320px;
+  left: 50%;
+  margin-left: -320px;
+  width: 640px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003536}}
+#block-menu-block-1 .block-inner {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003541}}
+.field-type-text-with-summary table {
+  font-size: 1.2em;
+  color: #696969;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003545}}
+.field-type-text-with-summary table td, .field-type-text-with-summary table th {
+  padding: 9px 14px;
+  border: 1px solid #ddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003551}}
+.field-type-text-with-summary table img {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003558}}
+th {
+  font-variant: small-caps;
+  color: #38607c;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003564}}
+#phone-list tbody tr:hover {
+  background-color: #38607c;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003567}}
+#phone-list tbody tr:hover a {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003574}}
+#block-block-8 {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003579}}
+#block-block-9 {
+  height: 28px;
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003583}}
+a.social-media {
+  text-indent: -9999px;
+  background-position: 0 0;
+  height: 28px;
+  width: 28px;
+  display: block;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003593}}
+a.social-media:hover, a.social-media:focus, a.social-media:active {
+  background-position: 0 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003596}}
+a.social-media.youtube {
+  background-image: url("../images/youtube.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003599}}
+a.social-media.facebook {
+  background-image: url("../images/facebook.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003602}}
+a.social-media.twitter {
+  background-image: url("../images/twitter.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003605}}
+a.social-media.linkedin {
+  background-image: url("../images/linkedin.png");
+}
+
+/* =============================================================================
+ *   HTML Elements
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003612}}
+h1, h2, h3, h4, h5, h6 {
+  color: #38607c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003616}}
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003621}}
+h2 {
+  font-size: 2em;
+  font-weight: 100;
+  font-variant: small-caps;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003707}}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace, sans-serif;
+}
+
+/* =============================================================================
+ *   Wrappers
+ * ========================================================================== */
+/*
+ * Page wrapper, includes the .container class which sets the overall page or section width
+ * Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it!
+ */
+/*
+ * Wraps all header elements - branding and .region-header
+ */
+/*
+ * Wraps the sidebars the content column
+ */
+/*
+ * Main content column wrapper
+ */
+/*
+ * Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column
+ */
+/*
+ * Wraps the content region, avoid applying styles to this wrapper, its used mainly for position and invisible gutters and can be problematic to style
+ */
+/*
+ * Footer wrapper
+ */
+/*
+ * Panels may need additional margin wrangling when in the $content region
+ */
+/*
+ * Full Width Wrappers
+ * These are used in the optional page--full-width-wrappers.tpl.php template.
+ * All have internal .container classes. In the full width wrapper template the
+ * .container classes set the width or max-width of the contained element - you
+ * can style this but never add any width/margin/padding/borders etc to .container
+ */
+/*
+ * Wraps #page
+ */
+/*
+ * Wraps the leaderboard
+ */
+/*
+ * Wraps the header
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003795}}
+#header-wrapper {
+  /* Debug styles, is this working */
+  background: rgba(255, 192, 203, 0.5);
+}
+
+/*
+ * Wraps the nav elements
+ */
+/*
+ * Wraps breadcrumb
+ */
+/*
+ * Wraps messages and help
+ */
+/*
+ * Wraps the secondary content/preface region
+ */
+/*
+ * Wraps the main content column
+ */
+/*
+ * Wraps the tertiary content/postfix region
+ */
+/*
+ * Footer wrapper
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003853}}
+#footer-wrapper {
+  /* Debug styles, is this working? */
+  background: rgba(255, 192, 203, 0.5);
+}
+
+/* =============================================================================
+ *   Branding
+ * ========================================================================== */
+/*
+ * Wraps all the branding elements, logo, name and slogan
+ */
+/*
+ * Logo
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003874}}
+#logo {
+  padding: 10px 0;
+  background: url("../images/capture.png") no-repeat scroll 100% center transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003878}}
+#logo img {
+  vertical-align: bottom;
+}
+
+/*
+ * Wrapper for the site name and slogan (hgroup)
+ */
+/*
+ * Site name (h1)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003893}}
+#site-name {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003899}}
+#site-name a:link, #site-name a:visited {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003904}}
+#site-name a:hover, #site-name a:focus {
+  text-decoration: underline;
+}
+
+/*
+ * Site slogan (h2)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003914}}
+#site-slogan {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Page content header
+ * ========================================================================== */
+/*
+ * Main content header wraps the page title, tabs and actions links
+ */
+/*
+ * The main page title (h1)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003932}}
+#page-title {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Misc Global Styles
+ * ========================================================================== */
+/*
+ * Feed icons
+ */
+/*
+ * Aggregator feed source
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003950}}
+#aggregator .feed-source .feed-icon {
+  display: inline;
+  float: none;
+  margin-right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003958}}
+.feed-details dt,
+.feed-details dd {
+  display: inline;
+  margin: 0;
+}
+
+/*
+ * Generic styles for the more link
+ */
+/*
+ * Generic styles for links. See the ul.links declaration in node and comment stylesheets
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003973}}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003977}}
+ul.links.inline {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003981}}
+ul.links li {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Search results are an ordered list so reset the margin
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\00003992}}
+.search-results {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Regions
+ * ========================================================================== */
+/*
+ * Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc
+ */
+/*
+ * Regions have an inner div - perfect for adding margin, padding or borders
+ */
+/*
+ * Regions can be nested, such as when using Panels
+ */
+/*
+ * Header region, embedded in the #header
+ */
+/*
+ * Generally used to output Drupals help block, if the help module is enabled
+ */
+/*
+ * Secondary content
+ */
+/*
+ * Sits above the main content header, like a content-top region
+ */
+/*
+ * Sits below the main content, like a content-bottom region
+ */
+/*
+ * Sidebars - targets both
+ */
+/*
+ * First sidebar
+ */
+/*
+ * Second sidebar
+ */
+/*
+ * Tertiary content
+ */
+/*
+ * Footer region
+ */
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031083}}
+a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031093}}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* =============================================================================
+ *   Primary, Secondary and Menu Bar region menus
+ * ========================================================================== */
+/*
+ * Use one of the following id's for granular control:
+ *  - #menu-bar (menu bar region)
+ *  - #primary-menu (main menu)
+ *  - #secondary-menu (secondary/user menu)
+ * You can target all of these with .nav or div[id$="menu-bar"]
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031111}}
+.nav {
+  clear: both;
+  margin: 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031116}}
+.nav ul,
+.nav ul.menu {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031122}}
+.nav li,
+.nav ul.menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031131}}
+.nav li a,
+.nav ul.menu li a {
+  display: block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031142}}
+.nav .block {
+  margin-bottom: 0;
+}
+
+/* =============================================================================
+ *   Superfish
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031152}}
+ul.sf-menu {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031155}}
+ul.sf-menu a {
+  border-left: 0;
+  border-top: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031169}}
+ul.sf-menu li:hover, ul.sf-menu li.sfHover {
+  outline: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031177}}
+ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
+  outline: 0;
+}
+
+/*
+ * Superfish blocks
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031191}}
+.block-superfish ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031202}}
+.block-superfish li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*
+ * Vertical style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031212}}
+.sf-vertical {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031215}}
+.sf-vertical li {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031221}}
+.sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031228}}
+.sf-vertical li a {
+  padding: 0 10px;
+}
+
+/*
+ * Navbar style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031238}}
+.sf-navbar {
+  padding-bottom: 0 !important;
+}
+
+/*
+ * Sensible padding for the default style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031246}}
+.sf-menu.sf-style-default a {
+  padding: 0 10px;
+}
+
+/* =============================================================================
+ *   Menus, usually blocks
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031255}}
+ul.menu {
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031258}}
+ul.menu ul {
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031266}}
+ul.menu li {
+  margin: 0;
+}
 
 /* If li.content exists it's a problem, so reset the padding */
-.block .menu li.content { padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031295}}
+.block .menu li.content {
+  padding: 0;
+}
 
-/* ============================================================================= Book navigation menu ========================================================================== */
-.book-navigation .page-up { /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */ min-width: 2em; white-space: nowrap; }
-.book-navigation .menu { margin-left: 0; }
+/* =============================================================================
+ *   Book navigation menu
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031312}}
+.book-navigation .page-up {
+  /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
+  min-width: 2em;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031318}}
+.book-navigation .menu {
+  margin-left: 0;
+}
 
-/* ============================================================================= Breadcrumbs ========================================================================== */
-#breadcrumb { margin: 10px 0; opacity: 0.8; /* If the label is set to show in theme settings the label class is added */ }
-#breadcrumb .breadcrumb-label { font-size: 1em; display: inline; padding-right: 10px; }
-#breadcrumb .breadcrumb-label:after { content: ":"; }
-#breadcrumb ol { margin: 0; padding: 0; }
-#breadcrumb .with-breadcrumb-label ol { display: inline; }
-#breadcrumb li { list-style: none; display: inline; }
+/* =============================================================================
+ *   Breadcrumbs
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031328}}
+#breadcrumb {
+  margin: 10px 0;
+  opacity: 0.8;
+  /* If the label is set to show in theme settings the label class is added */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031333}}
+#breadcrumb .breadcrumb-label {
+  font-size: 1em;
+  display: inline;
+  padding-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031338}}
+#breadcrumb .breadcrumb-label:after {
+  content: ":";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031343}}
+#breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031348}}
+#breadcrumb .with-breadcrumb-label ol {
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031352}}
+#breadcrumb li {
+  list-style: none;
+  display: inline;
+}
 
-/* ============================================================================= Pagers ========================================================================== */
-ul.pager { clear: both; margin: 0; text-align: center; }
+/* =============================================================================
+ *   Pagers
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031379}}
+ul.pager {
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
 
-.item-list ul.pager li { margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031386}}
+.item-list ul.pager li {
+  margin: 0;
+}
 
-ul.pager li { background-image: none; display: inline; list-style-type: none; padding: .5em; }
-ul.pager li.pager-current { font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031391}}
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031397}}
+ul.pager li.pager-current {
+  font-weight: 700;
+}
 
-.block ul.pager li { margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031403}}
+.block ul.pager li {
+  margin: 0;
+}
 
-/* Theme the various states of pager links */
-/* ============================================================================= Skip Navigation ========================================================================== */
-#skip-link { left: 50%; margin-left: -6.5em; margin-top: 0; padding: 0 0.5em; position: absolute; width: 12em; z-index: 50; }
-#skip-link a { background: #444; background: rgba(0, 0, 0, 0.6); color: white; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
-#skip-link a:link, #skip-link a:visited { background: #444; background: rgba(0, 0, 0, 0.6); color: white; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
-#skip-link a:hover, #skip-link a:focus, #skip-link a:active { outline: 0; }
+/*
+ * Theme the various states of pager links
+ */
+/* =============================================================================
+ *   Skip Navigation
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031440}}
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031449}}
+#skip-link a {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031460}}
+#skip-link a:link, #skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031472}}
+#skip-link a:hover, #skip-link a:focus, #skip-link a:active {
+  outline: 0;
+}
 
-/* ============================================================================= Tabs (local tasks) ========================================================================== */
-#tasks { margin-bottom: -15px; }
+/* =============================================================================
+ *   Tabs (local tasks)
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031483}}
+#tasks {
+  margin-bottom: -15px;
+}
 
-ul.primary { border-bottom-color: #cccccc; margin: 20px 0; padding: 0 0 0 5px; }
-ul.primary li { display: block; float: left; margin: 0 1px -1px; }
-ul.primary li a { background-color: #f5f5f5; border-color: #cccccc; margin-right: 1px; padding: 0 10px; display: block; float: left; height: 1.5em; line-height: 1.5em; }
-ul.primary li a:hover, ul.primary li a:focus { background-color: #eeeeee; border-color: #cccccc; }
-ul.primary li.active a, ul.primary li.active a:hover, ul.primary li.active a:focus { background-color: white; border-bottom-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031488}}
+ul.primary {
+  border-bottom-color: #cccccc;
+  margin: 20px 0;
+  padding: 0 0 0 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031493}}
+ul.primary li {
+  display: block;
+  float: left;
+  margin: 0 1px -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031498}}
+ul.primary li a {
+  background-color: #f5f5f5;
+  border-color: #cccccc;
+  margin-right: 1px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031509}}
+ul.primary li a:hover, ul.primary li a:focus {
+  background-color: #eeeeee;
+  border-color: #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031519}}
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background-color: white;
+  border-bottom-color: white;
+}
 
-ul.secondary { border-bottom: 1px solid #cccccc; margin: 1em 0 0; padding: 0 .3em 1em; }
-ul.secondary li { border-right: 0; list-style: none; padding: 0 10px 0 0; }
-ul.secondary li a:hover, ul.secondary li a.active { border-bottom: none; text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031527}}
+ul.secondary {
+  border-bottom: 1px solid #cccccc;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031532}}
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031539}}
+ul.secondary li a:hover, ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
 
-/* ============================================================================= Action links ========================================================================== */
-ul.action-links { margin: 20px 0 0; list-style: none; }
+/* =============================================================================
+ *   Action links
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031552}}
+ul.action-links {
+  margin: 20px 0 0;
+  list-style: none;
+}
 
-/* ============================================================================= Field Styling ========================================================================== */
-/* Wrapper for any field */
-/* Above and inline classes are on the field wrapper */
-/* When labels are set to inline in field display settings the clearfix class is automatically added */
-/* Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues */
-.field-label { font-size: 1em; font-weight: 700; font-family: inherit; line-height: inherit; margin-bottom: 0; }
+/* =============================================================================
+ *  Field Styling
+ * ========================================================================== */
+/*
+ * Wrapper for any field
+ */
+/*
+ * Above and inline classes are on the field wrapper
+ */
+/*
+ * When labels are set to inline in field display settings the clearfix class is automatically added
+ */
+/*
+ * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031585}}
+.field-label {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+}
 
-/* Field types (Core) */
-/* Image fields use the <figure> and <figcaption> elements from HTML5 */
-/* Taxonomy */
-.field-type-taxonomy-term-reference { /* The same bottom margin as p, blockquote, ul, ol and dl */ margin-bottom: 1.5em; }
-.field-type-taxonomy-term-reference.field-label-inline .field-items { margin: 0; padding: 0; }
-.field-type-taxonomy-term-reference.field-label-inline .field-item { display: inline; list-style: none; padding: 0 10px 0 0; }
+/*
+ * Field types (Core)
+ */
+/*
+ * Image fields use the <figure> and <figcaption> elements from HTML5
+ */
+/*
+ * Taxonomy
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031614}}
+.field-type-taxonomy-term-reference {
+  /* The same bottom margin as p, blockquote, ul, ol and dl */
+  margin-bottom: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031619}}
+.field-type-taxonomy-term-reference.field-label-inline .field-items {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031624}}
+.field-type-taxonomy-term-reference.field-label-inline .field-item {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
 
-/* Text */
-/* Long text */
-/* Text with summary */
-/* File */
-/* Number/Integer */
-/* Decimal */
-/* Number float */
-/* List */
-/* List boolean */
-/* List integer */
-/* List float */
-/* Field types (Contrib) */
-/* Named fields */
-/* Underscores in field name are replaced with dashes */
-/* Image Alignment Theme Settings - included here so you can easily override  */
-/* Float none setting */
-/* Float left setting */
-.ia-l .field-type-image figure, .iat-l .field-type-image figure { margin: 5px 20px 15px 0; }
+/*
+ * Text
+ */
+/*
+ * Long text
+ */
+/*
+ * Text with summary
+ */
+/*
+ * File
+ */
+/*
+ * Number/Integer
+ */
+/*
+ * Decimal
+ */
+/*
+ * Number float
+ */
+/*
+ * List
+ */
+/*
+ * List boolean
+ */
+/*
+ * List integer
+ */
+/*
+ * List float
+ */
+/*
+ * Field types (Contrib)
+ */
+/*
+ * Named fields
+ */
+/*
+ * Underscores in field name are replaced with dashes
+ */
+/*
+ * Image Alignment Theme Settings - included here so you can easily override 
+ */
+/*
+ * Float none setting
+ */
+/*
+ * Float left setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031739}}
+.ia-l .field-type-image figure,
+.iat-l .field-type-image figure {
+  margin: 5px 20px 15px 0;
+}
 
-/* Centered setting */
-.ia-c .field-type-image figure, .iat-c .field-type-image figure { margin: 5px auto 15px; }
+/*
+ * Centered setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031748}}
+.ia-c .field-type-image figure,
+.iat-c .field-type-image figure {
+  margin: 5px auto 15px;
+}
 
-/* Float right setting */
-.ia-r .field-type-image figure, .iat-r .field-type-image figure { margin: 5px 0 15px 20px; }
+/*
+ * Float right setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031757}}
+.ia-r .field-type-image figure,
+.iat-r .field-type-image figure {
+  margin: 5px 0 15px 20px;
+}
 
-/* ============================================================================= Block Styling ========================================================================== */
-/* Main wrapper for most blocks, block_system_main does not have it */
-.block { margin-bottom: 20px; }
+/* =============================================================================
+ *   Block Styling
+ * ========================================================================== */
+/*
+ * Main wrapper for most blocks, block_system_main does not have it
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031770}}
+.block {
+  margin-bottom: 20px;
+}
 
-/* Inner wrapper for most blocks, good for margin, padding and borders, block_system_main does not have it */
-/* The first block in the region */
-/* The last block in the region */
-/* Zebra striping for each block in the region */
-/* Zebra striping for each block in the region */
-/* Block title */
-.block-title { margin: 0; }
+/*
+ * Inner wrapper for most blocks, good for margin, padding and borders, block_system_main does not have it
+ */
+/*
+ * The first block in the region
+ */
+/*
+ * The last block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Block title
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031808}}
+.block-title {
+  margin: 0;
+}
 
-/* Block content wrapper */
-/* Match item list and block menu margin and padding */
-.block-content ul, .block-content ol { padding: 0 0 0 15px; }
-.block-content li { margin: 0; padding: 0; }
+/*
+ * Block content wrapper
+ */
+/*
+ * Match item list and block menu margin and padding
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031825}}
+.block-content ul,
+.block-content ol {
+  padding: 0 0 0 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000031829}}
+.block-content li {
+  margin: 0;
+  padding: 0;
+}
 
-/* Block for the latest news items in the first category */
-/* Block for the latest news items in the first feed */
-/* First block created with "Add block" link */
-/* "Recent blog posts" block */
-/* "Book navigation" block for the current book's table of contents */
-/* "Recent comments" block */
-/* "Active forum topics" block */
-/* "New forum topics" block */
-/* Language switcher block */
-/* Custom menu block */
-/* "Recent content" block */
-/* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
-/* "Most recent poll" block */
-/* "Author information" block for the profile of the page's author */
-/* "Search form" block */
-/* "Shortcuts" block */
-/* "Popular content" block */
-/* "Main menu" block */
-/* "Management" block for Drupal management menu */
-/* "Navigation" block for Drupal navigation menu */
-/* "User menu" block for Drupal user menu */
-/* "System help" block */
-/* "Main page content" block */
-/* "Powered by Drupal" block */
-/* "User login form" block */
-/* "Who's new" block for a list of the newest users */
-/* "Who's online" block for a list of the online users */
-/* ============================================================================= Node Styling ========================================================================== */
-.node { margin-bottom: 20px; }
-.node .node-title { margin: 0; }
+/*
+ * Block for the latest news items in the first category
+ */
+/*
+ * Block for the latest news items in the first feed
+ */
+/*
+ * First block created with "Add block" link
+ */
+/*
+ * "Recent blog posts" block
+ */
+/*
+ * "Book navigation" block for the current book's table of contents
+ */
+/*
+ * "Recent comments" block
+ */
+/*
+ * "Active forum topics" block
+ */
+/*
+ * "New forum topics" block
+ */
+/*
+ * Language switcher block
+ */
+/*
+ * Custom menu block
+ */
+/*
+ * "Recent content" block
+ */
+/*
+ * "Syndicate" block for primary RSS feed; see also page.css's .feed-icon
+ */
+/*
+ * "Most recent poll" block
+ */
+/*
+ * "Author information" block for the profile of the page's author
+ */
+/*
+ * "Search form" block
+ */
+/*
+ * "Shortcuts" block
+ */
+/*
+ * "Popular content" block
+ */
+/*
+ * "Main menu" block
+ */
+/*
+ * "Management" block for Drupal management menu
+ */
+/*
+ * "Navigation" block for Drupal navigation menu
+ */
+/*
+ * "User menu" block for Drupal user menu
+ */
+/*
+ * "System help" block
+ */
+/*
+ * "Main page content" block
+ */
+/*
+ * "Powered by Drupal" block
+ */
+/*
+ * "User login form" block
+ */
+/*
+ * "Who's new" block for a list of the newest users
+ */
+/*
+ * "Who's online" block for a list of the online users
+ */
+/* =============================================================================
+ *   Node Styling
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032002}}
+.node {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032019}}
+.node .node-title {
+  margin: 0;
+}
 
-/* All nodes are given a node-FOO class that describes the type of content that it is. If you create a new content type called "my-custom-type", it will receive a "node-my-custom-type" class. */
-/* ============================================================================= Comment Styling - Comments, comment wrapper, comment form ========================================================================== */
-/* Wrapper for the list of comments and its titles */
-#comments { margin: 1.5em 0; }
-#comments h2.comment-title { margin: 0; }
-#comments h2.comment-form { margin: 0; }
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* =============================================================================
+ *   Comment Styling - Comments, comment wrapper, comment form
+ * ========================================================================== */
+/*
+ * Wrapper for the list of comments and its titles
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032077}}
+#comments {
+  margin: 1.5em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032081}}
+#comments h2.comment-title {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032085}}
+#comments h2.comment-form {
+  margin: 0;
+}
 
-/* Wrapper for a single comment */
-.comment { margin-bottom: 20px; }
+/*
+ * Wrapper for a single comment
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032095}}
+.comment {
+  margin-bottom: 20px;
+}
 
-/* Comment title */
-.comment-title { margin: 0; }
+/*
+ * Comment title
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032126}}
+.comment-title {
+  margin: 0;
+}
 
-/* Comment states */
-/* Preview of the comment before submitting new or updated comment */
-/* "New" marker for comments that are new for the current user */
-.new { color: #cc0000; }
+/*
+ * Comment states
+ */
+/*
+ * Preview of the comment before submitting new or updated comment
+ */
+/*
+ * "New" marker for comments that are new for the current user
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032158}}
+.new {
+  color: #cc0000;
+}
 
-/* Nested comments are indented */
-.indented { margin-left: 40px; }
+/*
+ * Nested comments are indented
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032166}}
+.indented {
+  margin-left: 40px;
+}
 
-/* ============================================================================= Forms ========================================================================== */
-/* Wrapper for a form element (or group of form elements) and its label */
-.form-item input.error, .form-item textarea.error, .form-item select.error { border: 1px solid #cc0000; }
-.form-item label { font-weight: 700; }
-.form-item .description { font-size: 0.85em; }
+/* =============================================================================
+ *   Forms
+ * ========================================================================== */
+/*
+ * Wrapper for a form element (or group of form elements) and its label
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032182}}
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #cc0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032186}}
+.form-item label {
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032193}}
+.form-item .description {
+  font-size: 0.85em;
+}
 
-/* Highlight marks and form required mark */
-.marker, .form-required { color: #cc0000; }
+/*
+ * Highlight marks and form required mark
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032207}}
+.marker,
+.form-required {
+  color: #cc0000;
+}
 
-/* The submit button */
-.container-inline div, .container-inline label { display: inline; }
+/*
+ * The submit button
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032221}}
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
 
-/* Define consistent borders */
-fieldset { border: 1px solid #cccccc; }
+/*
+ * Define consistent borders
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032229}}
+fieldset {
+  border: 1px solid #cccccc;
+}
 
-/* Tips for Drupal's input formats */
-/* Buttons used by contrib modules like Media */
-a.button { -webkit-appearance: button; -moz-appearance: button; appearance: button; }
+/*
+ * Tips for Drupal's input formats
+ */
+/*
+ * Buttons used by contrib modules like Media
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032243}}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
 
-/* Password confirmation */
-.password-parent, .confirm-parent { margin: 0; }
+/*
+ * Password confirmation
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032252}}
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
 
-/* ============================================================================= Tables ========================================================================== */
-table { margin: 10px 0; padding: 0; width: 100%; }
-table.sticky-header { z-index: 10; }
+/* =============================================================================
+ *   Tables
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032261}}
+table {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032266}}
+table.sticky-header {
+  z-index: 10;
+}
 
-table, thead, tbody, tr, th, td { border-color: #cccccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032277}}
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: #cccccc;
+}
 
-table, td, th { vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032284}}
+table,
+td,
+th {
+  vertical-align: middle;
+}
 
-caption, th, td { text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032291}}
+caption,
+th,
+td {
+  text-align: left;
+}
 
-thead tr { font-weight: 700; background-color: #e5e5e5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032296}}
+thead tr {
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
 
-td, th { border-bottom: 0; margin: 0; padding: 5px 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032303}}
+td,
+th {
+  border-bottom: 0;
+  margin: 0;
+  padding: 5px 7px;
+}
 
-tbody tr { border-top: 1px solid #cccccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032313}}
+tbody tr {
+  border-top: 1px solid #cccccc;
+}
 
-tr { /* Table row striping */ }
-tr.odd { background: white; }
-tr.info, tr.even, tr:nth-child(2n+2) { border-bottom: 0; background-color: #f5f5f5; }
-tr.odd td.active { background-color: #eeeeee; }
-tr.even td.active { background-color: #ebebeb; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032318}}
+tr {
+  /* Table row striping */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032320}}
+tr.odd {
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032327}}
+tr.info, tr.even, tr:nth-child(2n+2) {
+  border-bottom: 0;
+  background-color: #f5f5f5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032336}}
+tr.odd td.active {
+  background-color: #eeeeee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032340}}
+tr.even td.active {
+  background-color: #ebebeb;
+}
 
-/* Forum tables Core sets white-space to nowrap, which makes no sense */
-#forum td .created, #forum td .posts, #forum td .topics, #forum td .last-reply, #forum td .replies, #forum td .pager { white-space: normal; }
+/*
+ * Forum tables
+ * Core sets white-space to nowrap, which makes no sense
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032368}}
+#forum td .created,
+#forum td .posts,
+#forum td .topics,
+#forum td .last-reply,
+#forum td .replies,
+#forum td .pager {
+  white-space: normal;
+}
 
-/* ============================================================================= Messages ========================================================================== */
-div.messages { margin-bottom: 10px; margin-top: 10px; }
-div.messages ul { margin-top: 0; margin-bottom: 0; }
+/* =============================================================================
+ *   Messages
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032379}}
+div.messages {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032384}}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-/* Unpublished nodes */
-.node-unpublished p.unpublished, .comment-unpublished p.unpublished { color: pink; color: rgba(239, 170, 170, 0.4); font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; font-size: 50px; font-weight: 700; line-height: 1.2; height: 0; margin: 0; padding: 0; overflow: visible; text-align: center; text-transform: uppercase; word-wrap: break-word; }
-.ie6-7 .node-unpublished p.unpublished > *, .ie6-7 .comment-unpublished p.unpublished > * { position: relative; }
+/*
+ * Unpublished nodes
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032425}}
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+  color: pink;
+  color: rgba(239, 170, 170, 0.4);
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/_custom\.scss}line{font-family:\00003187}}
+.ie6-7 .node-unpublished p.unpublished > *, .ie6-7
+.comment-unpublished p.unpublished > * {
+  position: relative;
+}
 
-/* ============================================================================= Maintenance pages ========================================================================== */
-.maintenance-page .container { padding: 40px 0; }
-.maintenance-page #site-name, .maintenance-page #page-title { margin: 0; }
+/* =============================================================================
+ *    Maintenance pages
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032436}}
+.maintenance-page .container {
+  padding: 40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032441}}
+.maintenance-page #site-name,
+.maintenance-page #page-title {
+  margin: 0;
+}
 
-.db-offline .container { margin: 0 auto; padding: 40px 0; width: 100%; max-width: 960px; }
-.db-offline div.messages { margin: 20px 0 0; }
-.db-offline #content { padding: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032448}}
+.db-offline .container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 960px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032455}}
+.db-offline div.messages {
+  margin: 20px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032459}}
+.db-offline #content {
+  padding: 20px 0;
+}
 
-/* ============================================================================= Misc overrides for contrib modules ========================================================================== */
-/* Admin menu overrides */
-#admin-menu { margin: 0; padding: 0; }
+/* =============================================================================
+ *   Misc overrides for contrib modules
+ * ========================================================================== */
+/*
+ * Admin menu overrides
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032472}}
+#admin-menu {
+  margin: 0;
+  padding: 0;
+}
 
-/* Devel Module */
-.dev-query { background: #eeeeee; padding: 30px; }
+/*
+ * Devel Module
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032481}}
+.dev-query {
+  background: #eeeeee;
+  padding: 30px;
+}
 
-/* Styleguide module tweaks */
-#styleguide-header { padding: 0 10px; }
-#styleguide-header .item-list { font-family: inherit; margin: 0 20px 20px 0; min-height: 260px; width: auto; }
+/*
+ * Styleguide module tweaks
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032490}}
+#styleguide-header {
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/burgmann\/drupal\/sites\/burg\.lab273\.com\/themes\/burg-at\/sass\/global\.styles\.scss}line{font-family:\000032493}}
+#styleguide-header .item-list {
+  font-family: inherit;
+  margin: 0 20px 20px 0;
+  min-height: 260px;
+  width: auto;
+}
